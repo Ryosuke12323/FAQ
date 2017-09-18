@@ -1,5 +1,8 @@
 <% @qas.each do |qa| %>
-  <p>Q. <%= qa.question %></p>
+  <div class="question clearfix">
+    <p>Q. <%= qa.question %>
+    <%= link_to '編集', "/qas/#{qa.id}/edit", method: :get, class: :btn %></p>
+  </div>
   <p>A. <%= qa.answer %></p>
   <hr>
 <% end %>

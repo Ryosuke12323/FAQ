@@ -13,19 +13,24 @@ body {
     float: right;
     width: 200px;
     height: 54px;
-    background-color: #fff;
-    color: #4a4a4a;
-    text-align: center;
-    text-decoration: none;
     line-height: 54px;
     outline: none;
     font-size: 25px;
   }
-  a.post:hover {
+}
+
+.btn {
+  background-color: #fff;
+  color: #4a4a4a;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn:hover {
   background-color: #eee;
   color: #D65F4C;
-  }
 }
+
 
 form {
   font-size: 24px;
@@ -45,5 +50,12 @@ form {
     color: #fff;
     border: 0;
     font-size: 18px;
+  }
+}
+
+.question {
+  a {
+    color: #4a4a4a;
+    float: right;
   }
 }
