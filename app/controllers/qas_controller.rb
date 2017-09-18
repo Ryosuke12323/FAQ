@@ -8,6 +8,8 @@ class QasController < ApplicationController
   end
 
   def create
+    Qa.create(qa_params)
+    redirect_to :root
   end
 
   def destroy
@@ -17,5 +19,10 @@ class QasController < ApplicationController
   end
 
   def update
+  end
+
+  private
+  def qa_params
+    params.require(:qa).permit(:question, :answer)
   end
 end
