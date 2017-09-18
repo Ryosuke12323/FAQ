@@ -3,6 +3,11 @@
     <%= form_for @qa do |f|%>
 
       <div class="field">
+        <%= f.label :Category, "Category" %><br>
+        <%= f.select :category_id, @categories %>
+      </div>
+
+      <div class="field">
         <%= f.label :Question, "Question" %><br>
         <%= f.text_area :question, placeholder: "質問を記入して下さい" %>
       </div>

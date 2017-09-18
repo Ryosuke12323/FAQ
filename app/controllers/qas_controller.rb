@@ -5,6 +5,11 @@ class QasController < ApplicationController
 
   def new
     @qa = Qa.new
+    # カテゴリをドロップダウンで表示させるためのデータ
+    @categories = {}
+    Category.all.each do |category|
+      @categories[category.name.to_sym] = category.id
+    end
   end
 
   def create
@@ -34,6 +39,6 @@ class QasController < ApplicationController
 
   private
   def qa_params
-    params.require(:qa).permit(:question, :answer)
+    params.require(:qa).permit(:question, :answer, :category_id)
   end
 end
