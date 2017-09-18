@@ -1,0 +1,18 @@
+<div class="contents row">
+  <div class="container">
+    <p>削除してよいですか？</p>
+      <div class="field">
+        <p> Question </p>
+        <%= @qa.question %>
+      </div>
+
+      <div class="field">
+        <p> Answer </p>
+        <%= @qa.answer %>
+      </div>
+
+      <div class="actions">
+        <%= link_to '削除する', "/qas/#{@qa.id}", method: :delete, class: :btn %>
+      </div>
+  </div>
+</div>

@@ -12,7 +12,14 @@ class QasController < ApplicationController
     redirect_to :root
   end
 
+  def delete_confirm
+    @qa = Qa.find(params[:id])
+  end
+
   def destroy
+    qa = Qa.find(params[:id])
+    qa.destroy
+    redirect_to :root
   end
 
   def edit
