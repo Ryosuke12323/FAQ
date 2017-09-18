@@ -4,6 +4,7 @@ class QasController < ApplicationController
   end
 
   def new
+    @qa = Qa.new
   end
 
   def create
