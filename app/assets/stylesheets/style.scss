@@ -1,0 +1,28 @@
+body {
+  margin: 0 auto;
+  max-width: 1200px;
+  min-width: 768px;
+}
+
+.header {
+  height: 70px;
+  background-color: #fff;
+  color: #525c65;
+  a.post {
+    display: inline-block;
+    float: right;
+    width: 200px;
+    height: 54px;
+    background-color: #fff;
+    color: #4a4a4a;
+    text-align: center;
+    text-decoration: none;
+    line-height: 54px;
+    outline: none;
+    font-size: 25px;
+  }
+  a.post:hover {
+  background-color: #eee;
+  color: #D65F4C;
+  }
+}
