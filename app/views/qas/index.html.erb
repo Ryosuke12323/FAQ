@@ -4,6 +4,6 @@
     <%= link_to '削除', "/qas/#{qa.id}/delete_confirm", method: :get, class: :btn %>
     <%= link_to '編集', "/qas/#{qa.id}/edit", method: :get, class: :btn %></p>
   </div>
-  <p>A. <%= qa.answer %></p>
+  <div class="answer" style="display: none;"><p>A. <%= qa.answer %></p></div>
   <hr>
 <% end %>
