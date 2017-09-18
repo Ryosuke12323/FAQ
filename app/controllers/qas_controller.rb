@@ -16,9 +16,13 @@ class QasController < ApplicationController
   end
 
   def edit
+    @qa = Qa.find(params[:id])
   end
 
   def update
+    qa = Qa.find(params[:id])
+    qa.update(qa_params)
+    redirect_to :root
   end
 
   private
