@@ -51,6 +51,21 @@ form {
     border: 0;
     font-size: 18px;
   }
+  input[type="submit"] {
+    height: 60px;
+    font-size: 24px;
+  }
+}
+
+.field {
+  margin: 15px 0;
+  select {
+    height: 50px;
+    width: 300px;
+    background-color: #fafafa;
+    font-family: "游ゴシック", "YuGothic";
+    font-size: 20px;
+  }
 }
 
 .question {
