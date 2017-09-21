@@ -4,7 +4,7 @@ $(document).on("turbolinks:load", function(){
       $(this).removeClass("active")
       $(this).next().slideUp(150);
     }else{
-      $(this).parent().find(".active").next().fadeOut("fast");
+      $(this).parent().parent().find(".active").next().slideUp(150);
       $(this).addClass("active")
       $(this).next().slideDown(150);
     }

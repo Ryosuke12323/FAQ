@@ -1,6 +1,7 @@
 class QasController < ApplicationController
   def index
     @qas = Qa.all
+    @categories = Category.all
   end
 
   def new

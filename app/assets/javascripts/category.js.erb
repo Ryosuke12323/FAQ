@@ -1,0 +1,11 @@
+$(document).on("turbolinks:load", function(){
+    <% Category.all.each do |category| %>
+      $('#category<%=category.id %>').click(function(){
+        $('.selected').removeClass('selected');
+        $(this).addClass('selected');
+        $('#qas div:not(.category<%=category.id %>).qa').hide();
+        $('#qas .category<%=category.id %>').show();
+    }),
+    <% end %>
+    function(){}
+})

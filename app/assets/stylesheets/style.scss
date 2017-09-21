@@ -68,10 +68,38 @@ form {
   }
 }
 
+#qas {
+  font-size: 20px;
+}
+
+.qa {
+  padding: 8px 0;
+  border-bottom: 1px #cacaca solid;
+}
+
 .question {
   a {
     padding: 5px;
     color: #4a4a4a;
     float: right;
   }
+}
+
+.answer {
+  background-color: #f8fcff;
+  padding: 10px 0;
+}
+
+.category {
+  float: left;
+  width: 200px;
+  text-align: center;
+  background-color: #aad0f3;
+  border-right: 1px white solid;
+  border-bottom: 1px white solid;
+}
+
+.selected {
+  background-color: #e06070;
+  color: white;
 }
