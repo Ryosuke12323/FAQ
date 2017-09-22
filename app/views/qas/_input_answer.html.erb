@@ -1,0 +1,12 @@
+<div id="editor">
+  <div class="field">
+    <%= f.label :Answer, "Answer" %><br>
+    <textarea name="qa[answer]" id="n" class="form-control" rows="10" placeholder="答えを記入してください" v-model='input'></textarea>
+  </div>
+
+  <!-- Markdown Viewer -->
+  <div class="di_inline_t preview">
+    <div v-html='input | marked' style: :"width: 650px;">
+    </div>
+  </div>
+</div>
