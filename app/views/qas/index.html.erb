@@ -18,7 +18,7 @@
       <%= link_to '編集', "/qas/#{qa.id}/edit", method: :get, class: :btn %>
       <% end %>
     </div>
-    <div class="answer" style="display: none;">A. <%= qa.answer %></div>
+    <div class="answer" style="display: none;">A. <%= markdown(qa.answer).html_safe %></div>
   </div>
 <% end %>
 </div>
