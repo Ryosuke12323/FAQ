@@ -4,7 +4,7 @@ body {
   min-width: 768px;
 }
 
-.header {
+header {
   height: 70px;
   background-color: #fff;
   color: #525c65;
@@ -57,6 +57,16 @@ form {
   }
 }
 
+#inc_search {
+  font-size: 24px;
+  width: 100%;
+  margin: 30px 0 10px;
+}
+
+#qas {
+  margin-top: 20px;
+}
+
 .field {
   margin: 15px 0;
   select {
@@ -87,14 +97,15 @@ form {
 
 .answer {
   background-color: #f8fcff;
-  padding: 10px 0;
+  padding: 10px 20px;
 }
 
 .category {
   float: left;
-  width: 200px;
+  width: 19.8%;
   text-align: center;
   background-color: #aad0f3;
+  font-size: 20px;
   border-right: 1px white solid;
   border-bottom: 1px white solid;
 }
