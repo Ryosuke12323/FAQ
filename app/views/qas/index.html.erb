@@ -1,16 +1,22 @@
+<input type=form id="inc_search" placeholder="検索ワードを入力してください"/>
+<ul id="result">
+</ul>
+
 <% @categories.each do |category| %>
  <div id="category<%= category.id %>" class="category">
   <%= category.name %>
  </div>
 <% end %>
 
-<div id="qas">
+<div id="qas" style="clear: both">
 <% @qas.each do |qa| %>
   <div class="qa category<%= qa.category_id %>">
     <div class="question clearfix">
       Q. <%= qa.question %>
+      <% if false %>
       <%= link_to '削除', "/qas/#{qa.id}/delete_confirm", method: :get, class: :btn %>
       <%= link_to '編集', "/qas/#{qa.id}/edit", method: :get, class: :btn %>
+      <% end %>
     </div>
     <div class="answer" style="display: none;">A. <%= qa.answer %></div>
   </div>

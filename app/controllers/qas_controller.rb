@@ -6,7 +6,6 @@ class QasController < ApplicationController
 
   def new
     @qa = Qa.new
-    # カテゴリをドロップダウンで表示させるためのデータ
     @categories = {}
     Category.all.each do |category|
       @categories[category.name.to_sym] = category.id
@@ -36,6 +35,10 @@ class QasController < ApplicationController
     qa = Qa.find(params[:id])
     qa.update(qa_params)
     redirect_to :root
+  end
+
+  def search
+    @qas = Qa.search_by_name(params[:q])
   end
 
   private

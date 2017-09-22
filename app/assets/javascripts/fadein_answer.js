@@ -1,7 +1,7 @@
 $(document).on("turbolinks:load", function(){
   $(".question").hover(
     function() {
-          $(this).css("color", "#A9A9A9");
+          $(this).css("color", "#808080");
       },
       function() {
           $(this).css("color", "#000");
