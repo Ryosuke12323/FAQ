@@ -114,3 +114,21 @@ form {
   background-color: #e06070;
   color: white;
 }
+
+/* for Markdown */
+.preview {
+  border: 1px #cacaca solid;
+  margin-bottom: 20px;
+}
+
+p code {
+  color: #c62727;
+  background-color: #f3d2d2;
+}
+
+.code pre {
+  background-color: #fafafa;
+  border: 1px #cacaca solid;
+  border-radius: 3px;
+  padding: 10px;
+}
