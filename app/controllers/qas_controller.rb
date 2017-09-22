@@ -29,6 +29,10 @@ class QasController < ApplicationController
 
   def edit
     @qa = Qa.find(params[:id])
+    @categories = {}
+    Category.all.each do |category|
+      @categories[category.name.to_sym] = category.id
+    end
   end
 
   def update
