@@ -37,10 +37,6 @@ class QasController < ApplicationController
     redirect_to :root
   end
 
-  def search
-    @qas = Qa.search_by_name(params[:q])
-  end
-
   private
   def qa_params
     params.require(:qa).permit(:question, :answer, :category_id)
