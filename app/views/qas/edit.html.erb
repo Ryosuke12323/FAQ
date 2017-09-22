@@ -3,14 +3,16 @@
     <%= form_for @qa do |f|%>
 
       <div class="field">
+        <%= f.label :Category, "Category" %><br>
+        <%= f.select :category_id, @categories, selected: @qa.category_id %>
+      </div>
+
+      <div class="field">
         <%= f.label :Question, "Question" %><br>
         <%= f.text_area :question, placeholder: "質問を記入して下さい" %>
       </div>
 
-      <div class="field">
-        <%= f.label :Qnswer, "Answer" %><br>
-        <%= f.text_area :answer, cols: 90, rows: 10, placeholder: "答えを記入して下さい" %>
-      </div>
+      <%= render partial: "input_answer", locals: {f: f} %>
 
       <div class="actions">
         <%= f.submit "変更する" %>
@@ -18,3 +20,17 @@
     <% end %>
   </div>
 </div>
+
+<script type="text/javascript">
+ $(window).on("turbolinks:load", function(){
+   new Vue({
+     el: '#editor',
+     data: {
+       input: '<%== j @qa.answer %>',
+     },
+     filters: {
+       marked: marked,
+     },
+   });
+ });
+</script>
