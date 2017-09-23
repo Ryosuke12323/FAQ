@@ -11,7 +11,7 @@ header {
   a.post {
     display: inline-block;
     float: right;
-    width: 200px;
+    width: 220px;
     height: 54px;
     line-height: 54px;
     outline: none;
@@ -19,16 +19,16 @@ header {
   }
 }
 
+.btn:hover {
+  background-color: #eee;
+  color: #D65F4C;
+}
+
 .btn {
   background-color: #fff;
   color: #4a4a4a;
   text-align: center;
   text-decoration: none;
-}
-
-.btn:hover {
-  background-color: #eee;
-  color: #D65F4C;
 }
 
 

@@ -4,10 +4,10 @@ $(document).on('turbolinks:load', function(){
     var categoryId = $('.selected')[0].id;
     $('.qa').hide();
     $('.qa.' + categoryId + ':contains(' + $(this).val() + ')').show();
-  } else {
-    $('.qa').hide();
-    $('.qa:contains(' + $(this).val() + ')').show();
-  }
+    } else {
+      $('.qa').hide();
+      $('.qa:contains(' + $(this).val() + ')').show();
+    }
   });
 });
 
