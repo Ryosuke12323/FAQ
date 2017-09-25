@@ -5,7 +5,8 @@ Rails.application.routes.draw do
       get "delete_confirm" => 'qas#delete_confirm'
     end
     collection do
-      get "export" => 'qas#export'
+      get "export" => 'qas#csvExport'
+      post "import" => 'qas#csvImport'
     end
   end
 end

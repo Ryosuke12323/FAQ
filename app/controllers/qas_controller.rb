@@ -41,11 +41,15 @@ class QasController < ApplicationController
     redirect_to :root
   end
 
-  def export
+  def csvExport
     respond_to do |format|
       timestamp = Time.now.strftime("%Y%m%d%H%M%S")
       format.csv { send_data Qa.to_csv, type: 'text/csv', filename: "qas_#{timestamp}.csv" }
     end
+  end
+
+  def csvImport
+    
   end
 
   private
