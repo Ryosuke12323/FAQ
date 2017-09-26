@@ -49,11 +49,11 @@ class QasController < ApplicationController
   end
 
   def csvImport
-    
   end
 
   private
   def qa_params
     params.require(:qa).permit(:question, :answer, :category_id, :created_at)
   end
+
 end
