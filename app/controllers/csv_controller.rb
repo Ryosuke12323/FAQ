@@ -18,6 +18,10 @@ class CsvController < ApplicationController
   end
 
   def updatable_attributes
-    ["question", "answer", "category_id", "create_user_id", "update_user_id", "created_at", "updated_at"]
+    ["question", "answer", "category_id", "created_at", "updated_at"]
   end
 end
+
+
+# あとでupdatable_attributesに追加
+#  "create_user_id", "update_user_id"
