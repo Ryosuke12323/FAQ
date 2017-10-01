@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170930094514) do
+ActiveRecord::Schema.define(version: 20171001103040) do
 
   create_table "categories", force: :cascade do |t|
     t.string   "name",       limit: 255, null: false
@@ -20,17 +20,14 @@ ActiveRecord::Schema.define(version: 20170930094514) do
   end
 
   create_table "curriculums", force: :cascade do |t|
-    t.string   "title",      limit: 255
-    t.string   "number",     limit: 255
+    t.string   "title",      limit: 255, null: false
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
   end
 
   create_table "qa_curriculums", force: :cascade do |t|
-    t.integer  "qa_id",         limit: 4
-    t.integer  "curriculum_id", limit: 4
-    t.datetime "created_at",              null: false
-    t.datetime "updated_at",              null: false
+    t.integer "qa_id",         limit: 4
+    t.integer "curriculum_id", limit: 4
   end
 
   add_index "qa_curriculums", ["curriculum_id"], name: "fk_rails_2d169fbdd4", using: :btree
@@ -45,6 +42,13 @@ ActiveRecord::Schema.define(version: 20170930094514) do
   end
 
   add_index "qas", ["category_id"], name: "index_qas_on_category_id", using: :btree
+
+  create_table "references", force: :cascade do |t|
+    t.string   "title",      limit: 255
+    t.string   "url",        limit: 255
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+  end
 
   add_foreign_key "qa_curriculums", "curriculums"
   add_foreign_key "qa_curriculums", "qas"

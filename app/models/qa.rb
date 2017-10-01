@@ -2,6 +2,8 @@ require 'csv'
 require 'nkf'
 
 class Qa < ActiveRecord::Base
+  has_many :qa_curriculums
+  has_many :curriculums, through: :qa_curriculums
 
   def self.to_csv
     headers = %w(question answer category_id created_at )
