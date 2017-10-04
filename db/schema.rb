@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171001103040) do
+ActiveRecord::Schema.define(version: 20171003144012) do
 
   create_table "categories", force: :cascade do |t|
     t.string   "name",       limit: 255, null: false
@@ -33,6 +33,16 @@ ActiveRecord::Schema.define(version: 20171001103040) do
   add_index "qa_curriculums", ["curriculum_id"], name: "fk_rails_2d169fbdd4", using: :btree
   add_index "qa_curriculums", ["qa_id"], name: "fk_rails_8b041b4f7f", using: :btree
 
+  create_table "qa_references", force: :cascade do |t|
+    t.integer  "qa_id",        limit: 4
+    t.integer  "reference_id", limit: 4
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+  end
+
+  add_index "qa_references", ["qa_id"], name: "fk_rails_9d480f4e8d", using: :btree
+  add_index "qa_references", ["reference_id"], name: "fk_rails_ff90e5f82a", using: :btree
+
   create_table "qas", force: :cascade do |t|
     t.text     "question",    limit: 65535, null: false
     t.text     "answer",      limit: 65535, null: false
@@ -52,4 +62,6 @@ ActiveRecord::Schema.define(version: 20171001103040) do
 
   add_foreign_key "qa_curriculums", "curriculums"
   add_foreign_key "qa_curriculums", "qas"
+  add_foreign_key "qa_references", "qas"
+  add_foreign_key "qa_references", "references"
 end

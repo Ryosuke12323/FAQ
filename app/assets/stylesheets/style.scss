@@ -140,6 +140,32 @@ form {
   color: white;
 }
 
+.curriculum {
+  a {
+    padding-left: 25px;
+    text-decoration: none;
+    color: #D65F4C;
+  }
+  a:hover {
+    text-decoration: underline;
+    color: #428bca;
+  }
+}
+
+.reference {
+  a {
+    padding-left: 25px;
+    text-decoration: none;
+    color: #D65F4C;
+  }
+  a:hover {
+    text-decoration: underline;
+    color: #428bca;
+  }
+}
+
+
+
 /* for Markdown */
 .preview {
   border: 1px #cacaca solid;

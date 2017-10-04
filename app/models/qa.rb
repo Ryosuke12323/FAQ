@@ -5,6 +5,9 @@ class Qa < ActiveRecord::Base
   has_many :qa_curriculums
   has_many :curriculums, through: :qa_curriculums
 
+  has_many :qa_references
+  has_many :references, through: :qa_references
+
   def self.to_csv
     headers = %w(question answer category_id created_at )
     csv_data = CSV.generate(headers: headers, write_headers: true, force_quotes: true) do |csv|
