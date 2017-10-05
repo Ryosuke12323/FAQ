@@ -44,6 +44,10 @@ group :development do
   gem 'spring'
 end
 
+group :production do
+  gem 'unicorn'
+end
+
 gem 'pry-rails'
 gem 'kaminari'
 gem 'devise'
