@@ -52,3 +52,4 @@ production:
   database: FAQ_production
   username: FAQ
   password: <%= ENV['FAQ_DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock

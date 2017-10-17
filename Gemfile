@@ -48,6 +48,7 @@ group :production do
   gem 'unicorn'
 end
 
+gem 'therubyracer'
 gem 'pry-rails'
 gem 'kaminari'
 gem 'devise'
