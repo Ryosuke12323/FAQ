@@ -6,11 +6,10 @@ $(document).on("turbolinks:load", function(){
         $('#qas div:not(.category<%=category.id %>).qa').hide();
         $('#qas .category<%=category.id %>').show();
 
-      //インクリメンタルサーチを再実行
-      var categoryId = $('.selected')[0].id;
-      $('.qa').hide();
-      $('.qa.' + categoryId + ':contains(' + $('#inc_search')[0].value + ')').show();
-      }),
+        //インクリメンタルサーチを再実行
+        var categoryId = $('.selected')[0].id;
+        $('.qa').hide();
+        $('.qa.' + categoryId + ':contains(' + $('#inc_search')[0].value + ')').show();
+      })
     <% end %>
-    function(){}
 })
