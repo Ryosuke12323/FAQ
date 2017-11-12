@@ -1,0 +1,248 @@
+@charset "UTF-8";
+/* 各ベンダープレフィックスが取れた標準版！！(http://caniuse.com/#search=placeholder-shown) */
+/* line 3, /Users/mizutaryousuke/Desktop/FAQ/app/assets/stylesheets/style.scss */
+:placeholder-shown {
+  color: #ccc;
+}
+
+/* Google Chrome, Safari, Opera 15+, Android, iOS */
+/* line 7, /Users/mizutaryousuke/Desktop/FAQ/app/assets/stylesheets/style.scss */
+::-webkit-input-placeholder {
+  color: #ccc;
+}
+
+/* Firefox 18- */
+/* line 11, /Users/mizutaryousuke/Desktop/FAQ/app/assets/stylesheets/style.scss */
+:-moz-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+
+/* Firefox 19+ */
+/* line 15, /Users/mizutaryousuke/Desktop/FAQ/app/assets/stylesheets/style.scss */
+::-moz-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+
+/* IE 10+ */
+/* line 19, /Users/mizutaryousuke/Desktop/FAQ/app/assets/stylesheets/style.scss */
+:-ms-input-placeholder {
+  color: #ccc;
+}
+
+/* line 27, /Users/mizutaryousuke/Desktop/FAQ/app/assets/stylesheets/style.scss */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* line 32, /Users/mizutaryousuke/Desktop/FAQ/app/assets/stylesheets/style.scss */
+header {
+  height: 70px;
+  background-color: #fff;
+  color: #525c65;
+}
+/* line 36, /Users/mizutaryousuke/Desktop/FAQ/app/assets/stylesheets/style.scss */
+header a.post {
+  display: inline-block;
+  float: right;
+  width: 220px;
+  height: 54px;
+  line-height: 54px;
+  outline: none;
+  font-size: 25px;
+}
+
+/* line 47, /Users/mizutaryousuke/Desktop/FAQ/app/assets/stylesheets/style.scss */
+.btn:hover {
+  background-color: #eee;
+  color: #D65F4C;
+}
+
+/* line 52, /Users/mizutaryousuke/Desktop/FAQ/app/assets/stylesheets/style.scss */
+.btn {
+  background-color: #fff;
+  color: #4a4a4a;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* line 60, /Users/mizutaryousuke/Desktop/FAQ/app/assets/stylesheets/style.scss */
+form {
+  font-size: 24px;
+  font-family: "游ゴシック", "YuGothic";
+}
+/* line 63, /Users/mizutaryousuke/Desktop/FAQ/app/assets/stylesheets/style.scss */
+form textarea {
+  padding: 10px;
+  margin: 5 0 15px;
+  border: 1px solid #d8d8d8;
+  border-radius: 5px;
+  font-size: 21px;
+  width: 100%;
+}
+/* line 71, /Users/mizutaryousuke/Desktop/FAQ/app/assets/stylesheets/style.scss */
+form input {
+  width: 100%;
+  background-color: #57C3E9;
+  border-radius: 10px;
+  color: #fff;
+  border: 0;
+  font-size: 18px;
+}
+/* line 79, /Users/mizutaryousuke/Desktop/FAQ/app/assets/stylesheets/style.scss */
+form input[type="submit"] {
+  height: 60px;
+  font-size: 24px;
+}
+
+/* line 85, /Users/mizutaryousuke/Desktop/FAQ/app/assets/stylesheets/style.scss */
+#inc_search {
+  font-size: 24px;
+  width: 100%;
+  margin: 30px 0 10px;
+}
+
+/* line 91, /Users/mizutaryousuke/Desktop/FAQ/app/assets/stylesheets/style.scss */
+#qas {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+/* line 96, /Users/mizutaryousuke/Desktop/FAQ/app/assets/stylesheets/style.scss */
+.field {
+  margin: 15px 0;
+}
+/* line 98, /Users/mizutaryousuke/Desktop/FAQ/app/assets/stylesheets/style.scss */
+.field select {
+  height: 50px;
+  width: 300px;
+  background-color: #fafafa;
+  font-family: "游ゴシック", "YuGothic";
+  font-size: 20px;
+}
+
+/* line 107, /Users/mizutaryousuke/Desktop/FAQ/app/assets/stylesheets/style.scss */
+.qa {
+  padding: 8px 0;
+  border-bottom: 1px #cacaca solid;
+  cursor: pointer;
+  cursor: hand;
+}
+
+/* line 115, /Users/mizutaryousuke/Desktop/FAQ/app/assets/stylesheets/style.scss */
+.question a {
+  padding: 5px;
+  color: #4a4a4a;
+  float: right;
+}
+
+/* line 122, /Users/mizutaryousuke/Desktop/FAQ/app/assets/stylesheets/style.scss */
+.answer {
+  background-color: #f8fcff;
+  padding: 10px 20px;
+}
+
+/* line 127, /Users/mizutaryousuke/Desktop/FAQ/app/assets/stylesheets/style.scss */
+.category {
+  float: left;
+  width: 19.8%;
+  text-align: center;
+  background-color: #aad0f3;
+  font-size: 20px;
+  border-right: 1px white solid;
+  border-bottom: 1px white solid;
+  cursor: pointer;
+  cursor: hand;
+}
+
+/* line 139, /Users/mizutaryousuke/Desktop/FAQ/app/assets/stylesheets/style.scss */
+.selected {
+  background-color: #e06070;
+  color: white;
+}
+
+/* line 145, /Users/mizutaryousuke/Desktop/FAQ/app/assets/stylesheets/style.scss */
+.curriculum a {
+  padding-left: 25px;
+  text-decoration: none;
+  color: #D65F4C;
+}
+/* line 150, /Users/mizutaryousuke/Desktop/FAQ/app/assets/stylesheets/style.scss */
+.curriculum a:hover {
+  text-decoration: underline;
+  color: #428bca;
+}
+
+/* line 157, /Users/mizutaryousuke/Desktop/FAQ/app/assets/stylesheets/style.scss */
+.reference a {
+  padding-left: 25px;
+  text-decoration: none;
+  color: #D65F4C;
+}
+/* line 162, /Users/mizutaryousuke/Desktop/FAQ/app/assets/stylesheets/style.scss */
+.reference a:hover {
+  text-decoration: underline;
+  color: #428bca;
+}
+
+/* for Markdown */
+/* line 171, /Users/mizutaryousuke/Desktop/FAQ/app/assets/stylesheets/style.scss */
+.preview {
+  border: 1px #cacaca solid;
+  margin-bottom: 20px;
+}
+
+/* line 176, /Users/mizutaryousuke/Desktop/FAQ/app/assets/stylesheets/style.scss */
+p code {
+  color: #c62727;
+  background-color: #f3d2d2;
+}
+
+/* line 181, /Users/mizutaryousuke/Desktop/FAQ/app/assets/stylesheets/style.scss */
+.code pre {
+  background-color: #fafafa;
+  border: 1px #cacaca solid;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+/* line 188, /Users/mizutaryousuke/Desktop/FAQ/app/assets/stylesheets/style.scss */
+.search__box {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("cityline.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+/* line 197, /Users/mizutaryousuke/Desktop/FAQ/app/assets/stylesheets/style.scss */
+.search__box .field {
+  width: 700px;
+  margin: 0 auto;
+}
+/* line 200, /Users/mizutaryousuke/Desktop/FAQ/app/assets/stylesheets/style.scss */
+.search__box .field input {
+  height: 50px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
